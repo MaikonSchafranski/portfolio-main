@@ -17,7 +17,7 @@
 }
 
 .introContant {
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   padding: 1rem;
   font-size: 3rem;
@@ -62,11 +62,11 @@
 
 @media screen and (max-width: 725px) {
   .bg {
-    height: 95vh;
+    height: 92vh;
   }
 
   .introContant {
-    height: 90vh;
+    height: 100vh;
   }
 
   .introText {

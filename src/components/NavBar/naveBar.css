@@ -1,4 +1,5 @@
 .navbar {
+  
   height: 5rem;
   width: 100vw;
   max-width: 100rem;
@@ -32,7 +33,7 @@
 .desktopMenuButton {
   background-color: #007FDE;
   color: white;
-  color: black;
+  
   border: none;
   display: flex;
   align-items: center;
@@ -48,6 +49,7 @@
 .desktopMenuButton:hover {
   background-color: #01e3be;
   color: black;
+  transition: .5s;
   border: 1px solid rgb(41, 41, 41);
 }
 
