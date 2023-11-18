@@ -1,5 +1,5 @@
+/* Estilos para telas maiores, como desktops e tablets */
 .navbar {
-  
   height: 5rem;
   width: 100vw;
   max-width: 100rem;
@@ -59,4 +59,26 @@
   width: 4rem;
   margin: 1rem;
   cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    padding: 1rem;
+  }
+
+  .logo {
+    height: 5rem;
+    width: 4rem;
+  }
+
+  .desktopMenuButton {
+    width: 6rem;
+    font-size: small;
+  }
+
+  .desktopMenuImg {
+    height: 3rem;
+    width: 2rem;
+  }
 }

@@ -34,11 +34,10 @@ const Skills = () => {
           <div className="skillText">
             <h2>Angular</h2>
             <p>
-              Angular é uma plataforma de aplicações web de código-fonte aberto
-              e front-end baseado em TypeScript liderado pela Equipe Angular do
-              Google e por uma comunidade de indivíduos e corporações. Angular é
-              uma reescrita completa do AngularJS, feito pela mesma equipe que o
-              construiu.
+              Angular é uma plataforma de código aberto liderada pelo Google
+              para desenvolvimento web, enquanto React é uma biblioteca de
+              código aberto focada na criação de interfaces de usuário em
+              páginas web.
             </p>
           </div>
         </div>
@@ -48,11 +47,10 @@ const Skills = () => {
           <div className="skillText">
             <h2>Spring</h2>
             <p>
-              O Spring é um framework open source para a plataforma Java criado
-              por Rod Johnson e descrito em seu livro "Expert One-on-One: JEE
-              Design e Development". Trata-se de um framework não intrusivo,
-              baseado nos padrões de projeto inversão de controle e injeção de
-              dependência.
+              O Spring é um framework open source para Java, desenvolvido por
+              Rod Johnson, que segue os padrões de projeto de inversão de
+              controle e injeção de dependência, proporcionando uma abordagem
+              não intrusiva.
             </p>
           </div>
         </div>

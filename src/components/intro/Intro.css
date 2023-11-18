@@ -38,7 +38,7 @@
 }
 
 .introPera {
-  font-size: small;
+  font-size: medium;
   font-weight: 300;
   letter-spacing: 1px;
 }
@@ -62,20 +62,20 @@
 
 @media screen and (max-width: 725px) {
   .bg {
-    height: 92vh;
+    height: 90vh;
   }
 
   .introContant {
-    height: 100vh;
+    height: 95vh;
   }
 
   .introText {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
   }
 
   .introPera {
-    font-size: medium;
+    font-size: small;
     font-weight: 300;
     letter-spacing: 1px;
   }
