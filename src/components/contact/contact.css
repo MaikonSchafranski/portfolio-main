@@ -121,7 +121,6 @@
   transform: translate(0, -2px);
 }
 
-
 @media screen and (max-width: 725px) {
   .knowledgeImg {
     width: calc(50% - 2.5rem);
