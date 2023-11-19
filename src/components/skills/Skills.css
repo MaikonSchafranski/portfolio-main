@@ -63,10 +63,9 @@
 
   @media screen and (max-width: 725px) {
    .skillsTitle {
-      font-size: 2rem;
-      padding-top: 2rem;
-      margin-bottom: 1rem;
-      color: #01e3be;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
     }}
 
   @media screen and (max-width: 725px) {
