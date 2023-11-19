@@ -39,16 +39,23 @@ const Contact = () => {
         </span>
 
         <form className="contactForm">
-          <input type="text" placeholder="Nome" />
-          <input type="email" placeholder="Email" />
-          <textarea className="msg" name="message" rows="5" placeholder="Mensagem"></textarea>
-          <button className="submitBtn" value="send"  type="submit">Enviar</button>
+          <input type="text" className="name" placeholder="Nome" />
+          <input type="email" className="email" placeholder="Email" />
+          <textarea
+            className="msg"
+            name="message"
+            rows="5"
+            placeholder="Mensagem"
+          ></textarea>
+          <button className="submitBtn" value="send" type="submit">
+            Enviar
+          </button>
           <div className="links">
             <img src={facebook} alt="facebook" className="link" />
-            <img src={instagram} alt="instagram" className="link"/>
-            <img src={github} alt="github" className="link"/>
+            <img src={instagram} alt="instagram" className="link" />
+            <img src={github} alt="github" className="link" />
           </div>
-        </form> 
+        </form>
       </div>
     </section>
   );

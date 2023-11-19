@@ -47,6 +47,81 @@
   transform: translate(-5px, -10px);
 }
 
+.contactDesc {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
+}
+
+.contactForm {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
+}
+
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(130deg, #002721, #00233d);
+}
+
+.name:hover,
+.email:hover,
+.msg:hover {
+  background-image: linear-gradient(130deg, #001c17, #00233d);
+}
+
+.name:focus,
+.email:focus,
+.msg:focus {
+  background-image: linear-gradient(130deg, #003c33, #013054);
+  cursor: pointer;
+  transition: 0.5s;
+  border-color: #03ffd9;
+  box-shadow: 0 0 10px #000;
+  transform: translate(0, -2px);
+}
+
+.submitBtn {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(130deg, #002721, #00233d);
+}
+
+.submitBtn:hover {
+  background-image: linear-gradient(130deg, #001c17, #00233d);
+}
+
+.submitBtn:focus {
+  background-image: linear-gradient(130deg, #003c33, #013054);
+  cursor: pointer;
+  transition: 0.1s;
+  border-color: #03ffd9;
+  box-shadow: 0 0 10px #000;
+  transform: translate(0, -2px);
+}
+
+
 @media screen and (max-width: 725px) {
   .knowledgeImg {
     width: calc(50% - 2.5rem);
@@ -55,7 +130,6 @@
   }
   .contactPageTitle {
     font-size: 2.5rem;
-
     margin-bottom: 1rem;
   }
 }
