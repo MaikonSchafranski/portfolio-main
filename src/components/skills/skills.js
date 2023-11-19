@@ -17,6 +17,7 @@ const Skills = () => {
         projetos. Estou entusiasmado em aplicar essas habilidades e contribuir
         de forma significativa em um ambiente profissional.
       </span>
+      
       <div className="skillBars">
         <div className="skillBar">
           <img src={rec} alt="rec" className="skillBarImg" />

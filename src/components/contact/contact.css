@@ -14,7 +14,7 @@
   font-size: 3.5rem;
   font-weight: 700;
   padding-top: 3rem;
-  margin-bottom: 1.5rem;
+
   color: #01e3be;
   width: 100%;
 }
@@ -27,13 +27,13 @@
 }
 
 .knowledgeImg {
+  object-fit: cover;
   width: calc(30% - 2rem);
-  max-width: 100%;
-  margin-bottom: 1.5rem;
+  min-width: 9rem;
+  margin: 0.5rem;
+  padding: 1rem;
 
-  margin: 1rem;
-  padding: 1.5rem 2rem;
-  border-radius: 1em;
+  border-radius: 1rem;
   background-image: linear-gradient(130deg, #001512, #00233d);
   border: 1px solid #333;
 }
@@ -47,7 +47,7 @@
   transform: translate(-5px, -10px);
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (max-width: 725px) {
   .knowledgeImg {
     width: calc(50% - 2.5rem);
     max-width: 100%;
@@ -55,7 +55,7 @@
   }
   .contactPageTitle {
     font-size: 2.5rem;
-    padding-top: 2rem;
+
     margin-bottom: 1rem;
   }
 }
