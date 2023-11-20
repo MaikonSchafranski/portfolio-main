@@ -61,7 +61,7 @@ p {
 
 @media screen and (max-width: 725px) {
   .worksBars {
-    max-width: 100%;
+    max-width: 90%;
   }
 
   .worksTitle {
