@@ -50,7 +50,6 @@ const Contact = () => {
           <button className="submitBtn" value="send" type="submit">
             Enviar
           </button>
-         
         </form>
       </div>
     </section>
