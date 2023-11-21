@@ -1,6 +1,6 @@
 import React from "react";
 import bg from "../../assets/Man-No-Background.png";
-import { Link } from "react-scroll";
+import { Link  } from "react-scroll";
 import "./Intro.css";
 
 const Intro = () => {
@@ -19,15 +19,19 @@ const Intro = () => {
             Atualmente, sou estudante de <br /> Análise e Desenvolvimento de
             Sistemas na Faculdade Uniguairaca. Embora ainda não tenha
             experiência <br /> profissional na área, possuo bom conhecimento em
-            React, Angular, TypeScript e java spring.
+            React, Angular, TypeScript e Java Spring.
           </p>
-          <Link>
-            <button className="bnt">Contrate-me</button>
-          </Link>
+         
+        
+            <button className="bnt"> <Link to="contact" smooth={true} duration={500}>Contrate-me </Link></button>
+         
+          
         </div>
+     
         <img src={bg} alt="Profile" className="bg" />
       </section>
     </div>
   );
 };
+
 export default Intro;

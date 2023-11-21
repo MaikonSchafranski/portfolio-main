@@ -45,13 +45,17 @@
 }
 
 .bnt {
+  width: 12rem;
+  height: 3rem;
   background-color: #007fde;
   color: white;
-  margin: 1rem 0;
+  margin: 1rem;
+  margin-left: 1rem;
   padding: 0.75rem 2rem;
   border: none;
   border-radius: 2rem;
   font-size: medium;
+  
 }
 
 .bnt:hover {
@@ -60,6 +64,8 @@
   cursor: pointer;
   border-radius: 2rem;
 }
+
+
 
 @media screen and (max-width: 725px) {
   .bg {

@@ -121,6 +121,34 @@
   transform: translate(0, -2px);
 }
 
+.links {
+  margin: 1rem;
+  display: initial;
+  align-items: center;
+}
+
+.links-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .links-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .links-icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
 @media screen and (max-width: 725px) {
   .knowledgeImg {
     width: calc(50% - 2.5rem);
