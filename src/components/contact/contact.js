@@ -1,7 +1,9 @@
 import "./contact.css";
 
 import React from "react";
+import emailjs from "@emailjs/browser";
 
+import { useState } from "react";
 
 import github from "../../assets/25231.png";
 import angular from "../../assets/angular.png";
@@ -16,6 +18,37 @@ import rec from "../../assets/react.png";
 import typeScript from "../../assets/typescript.png";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = () => {
+    if (name === "" || email === "" || message === "") {
+      alert("Preencha todos os campos");
+      return;
+    }
+
+    const templateParams = {
+      from_name: name,
+      message: message,
+      email: email,
+    };
+
+    emailjs
+      .send("service_onx2ktc", "template_6hf0zef", templateParams, "ZoGTFuutnAQTNWEjw")
+      .then(
+        (response) => {
+          console.log("Email enviado", response.status, response.text);
+          setName("");
+          setEmail("");
+          setMessage("");
+        },
+        (err) => {
+          console.log("Error: ", err);
+        }
+      );
+  };
+
   return (
     <section id="contactPage">
       <div id="knowledge">
@@ -39,18 +72,33 @@ const Contact = () => {
         </span>
 
         <form className="contactForm">
-          <input type="text" className="name" placeholder="Nome" />
-          <input type="email" className="email" placeholder="Email" />
+          <input
+            type="text"
+            className="name"
+            placeholder="Nome"
+            onChange={(e) => setName(e.target.value)}
+            value={name}
+          />
+          <input
+            type="email"
+            className="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+            value={email}
+          />
           <textarea
             className="msg"
             name="message"
             rows="5"
             placeholder="Mensagem"
+            onChange={(e) => setMessage(e.target.value)}
+            value={message}
           ></textarea>
-          <button className="submitBtn" value="send" type="submit">
+          <button className="submitBtn" type="button" onClick={sendEmail}>
             Enviar
           </button>
         </form>
+    
 
         <div className="links">
           <a
